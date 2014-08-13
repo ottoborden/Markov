@@ -1,0 +1,18 @@
+<div class="container-fluid" ng-controller="drunkardController">
+    <div class="row">
+        <div class="col-xs-3">
+            <h1>Drunkard</h1>
+            <blockquote>
+                One of the simplest of all Markov chains, the Drunkard's Walk represents a series of random movement's through a 2-dimensional grid. Only 4 directions of movement are possible (north, south, east & west). The probability that any of the possible direction will be chosen is 1/4.
+            </blockquote>
+        </div>
+        <div class="col-xs-9">
+            <table class="table table-striped">
+                <tr ng-repeat="steps in path">
+                    <td>{{steps.x}}</td>
+                    <td>{{steps.y}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
